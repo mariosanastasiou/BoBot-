@@ -3,90 +3,163 @@ version: "2.0"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - Γεια 
+    - Καλησπέρα
+    - Καλησπερα
+    - Γειά
+    - χελλοου
+    - Χαίρετε
+    - καλημερα
+    - γεια σου
 
 - intent: goodbye
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - Αντίο
+    - Τα λέμε
+    - καληνύχτα
+    - καλη συνέχεια
 
-- intent: affirm
+- intent: botchallenge
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - Είσαι μποτ
+    - Μιλάω με άνθρωπο ή με ψηφιακό βοηθό
+    - Είσαι ανθρωπος
+    - Εισαι ανθρωπος
+    - Εισαι αληθινός
 
-- intent: deny
+- intent: schedule   
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - πρόγραμμα [εξεταστικής](exams_programm)
+    - [εξεταστική](exams_programm)
+    - [εξεταστική Φεβρουαρίου](exams_programm)
+    - θα ήθελα να μάθω το [πρόγραμμα της εξεταστικής](exams_programm)
+    - θέλω να μάθω το [πρόγραμμα εξεταστικής](exams_programm)
+    - ποιο είναι το [πρόγραμμα της εξεταστικής](exams_programm)
+    - θέλω να μου πεις το [προγραμμα τςη εξεταστικής](exams_programm)
+    - [εξεταστική χειμερινού εξαμήνου](exams_programm)
+    - [εξεταστική εαρινού εξαμήνου](exams_programm)
+    - [επαναληπτική εξεταστική](exams_programm)
+    - [εξεταστική Σεπτεμβρίου](exams_programm)
+    - πότε ξεκινάει η [εξεταστική](exams_programm)
+    - απο ποτε μεχρι ποτε ειναι η [εξεταστικη](exams_programm)
+    - θα ήθελα να μάθω το [πρόγραμμα των μαθημάτων](subj_programm)
+    - θέλω να μάθω το [πρόγραμμα μαθημάτων](subj_programm)
+    - ποιο είναι το [πρόγραμμα χειμερινού εξαμήνου](subj_programm)
+    - θέλω να μου πεις το [προγραμμα εαρινού εξαμήνου](subj_programm)
+    - ποιο ειναι το [πρόγραμμα μαθημάτων](subj_programm)
+    - θελω να μου πεις το [πρόγραμμα μαθημάτων](subj_programm)
+    - [διαλέξεις](subj_programm)
+    - [πρόγραμμα διαλέξεων](subj_programm)
 
-- intent: mood_great
+- intent: ContactWithSecretary
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - [επικονωνία](contact_secr) με γραμματεία
+    - πως μπορώ να [επικοινωνήσω](contact_secr) με την γραμματεία
+    - [τρόποι επικοινωνίας](contact_secr) με γραμματεία 
+    - [γραμματεια](contact_secr)
+    - [τηλ](contact_number_secr) γραμματείας
+    - μπορεις να μου πεις το [τηλέφωνο](contact_number_secr) της γραμματείας;
+    - θα ηθελα να μαθω ποιο ειναι το [τηλ](contact_number_secr) της γραμματείας
+    - ποιο ειναι το [τηλεφωνο](contact_number_secr) της γραμματειας
+    - ποιο ειναι το [mail](contact_mail_secr) της γραμματείας
+    - θέλω να μάθω το [email](contact_mail_secr) της γραμματειας
+    - [μειλ](contact_mail_secr) γραμματειας
+    - μπορείς να μου πεις το [mail](contact_mail_secr) της γραμματείας
+    - [mail](contact_mail_secr) γραμματείας ποιο ειναι
+  
+      
+- intent: LocationInfo
+  examples: |
+    - Που γίνονται τα μαθήματα;
+    - που γίνονται οι διαλέξεις;
+    - χώρος διαλέξεων
+    - που είναι οι αίθουσες;
+    - κτιρια διαλεξεων
+    - τοποθεσια αιθουσων
+    - αμφιθέατρα σχολης
+    - που ειναι η σχολη
+    - που ειναι η γραμματεία
+    - μπορεις να μου πεις που είναι η σχολή
+    - ξέρεις που είναι η σχολη;
+    - θέλω να μάθω πού ειναι η γραμματεία
+    - ποια ειναι η τοποθεσια της γραμματειας
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
 
-- intent: bot_challenge
+## αιτηση ορκομωσιας
+## εγγραφη στην σχολη
+## πασο 
+## location
+## σιτιση 
+## erasmus 
+## συγγραματα 
+## μεταπτυχιακο
+## τομεις / κατευθυνσεις
+## καθηγητες
+## ECTS
+## ανακοινωσις
+## ΚΥΠΕΣ
+
+
+- synonym: Φεβρουαρίου
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - φεβρουαριου
+    - φεβρουαρίου
+    - Φεβρουαριου
+    - εξεταστική φεβρουαρίου
+    - εξεταστικη Φεβρουαριου
+    - εξεταστικη Φεβρουαρίου
+    - εξεταστικη ιανουαρίου
+    - εξεταστική Ιανουαρίου
+    - εξεταστικη Γενάρη
+    - εξεταστικη Γεναρη
+
+- synonym: Ιουνίου
+  examples: |
+    - ιουνιου
+    - ιουνίου
+    - Ιουνιου
+    - εξεταστική Ιουνιου
+    - εξεταστικη Ιουνίου
+    - εξεταστική ιουνιου
+    - εξεταστικη ιουνίου
+
+- synonym: Σεπτεμβρίου
+  examples: |
+    - σεπτεμβριου
+    - σεπτεμβρίου
+    - Σεπτεμβριου
+    - εξεταστική Σεπτεμβριου
+    - εξεταστικη σεπτεμβριου
+    - εξεταστική σεπτεμβριου
+
+- synonym: εξεταστική
+  examples: |
+    - εξεταστικής 
+    - εξεταστικη
+    - εξεταστικών 
+    - πρόγραμμα εξεταστικής 
+    - εξετάσεις
+    - πρόγραμμα εξετάσεων 
+    - προγραμμα εξετασεων 
+    - πργραμμα εξετάσεων 
+    - προγραμμα εξεταστικής
+    - προγραμμα εξεταστικης
+    
+- synonym: mail 
+  examples: |
+    - μειλ
+    - μαιλ
+    - email
+    - e-mail
+    - mail
+    - Email
+    - εμαιλ
+
+- synonym: τηλ
+  examples: |
+    - τηλέφωνο
+    - τηλεφωνο
+    - αριθμός επικοινωνίας
+    - αριθμος
+    - τηλεφωνικός αριθμός
+    - τηλεφωνικος αριθμος
