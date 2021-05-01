@@ -12,17 +12,12 @@ nlu:
 
   - intent: goodbye
     examples: |
-      - good afternoon
-      - cu
-      - good by
-      - cee you later
-      - good night
-      - bye
-      - goodbye
-      - have a nice day
-      - see you around
-      - bye bye
-      - see you later
+      - Αντίο
+      - Τα λέμε
+      - Καληνύχτα
+      - Καλή συνέχεια
+      - Χάρηκα που τα είπαμε
+      - Ευχαριστώ για την βοήθεια
 
   - intent: affirm
     examples: |
