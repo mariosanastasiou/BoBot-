@@ -1,4 +1,0 @@
-activate(){
-
-    ./venv/Scripts/activate
-}
